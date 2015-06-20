@@ -1,0 +1,67 @@
+.footer-wrapper{
+	width: 180px;
+	margin: 0 auto;
+	padding: 40px 0;
+
+	.visitlink{
+
+		a{	
+			margin-bottom: 40px;
+			font-size: $f-size1;
+			font-weight: bold;
+			color: $f-color;
+			text-align: center;
+		}
+	}
+
+	.social{
+		
+		float: left;
+		margin-bottom: 40px;
+
+		li{
+			float: left;
+		}
+
+		a{
+			height: 50px;
+			width: 50px;
+			margin-right: 4px;
+			margin-left: 5px;
+			text-indent: -9999px;
+			background: $bg1;
+		}
+
+		.twitter{
+			background: url("./../img/icon-twitter.svg") no-repeat center center, $bg1;
+		}
+
+		.facebook{
+			background: url("./../img/icon-facebook.svg") no-repeat center center, $bg1;
+		}
+
+		.youtube{
+			background: url("./../img/icon-youtube.svg") no-repeat center center, $bg1;
+		}
+		
+
+
+	}
+
+	.manufactured{
+		float: left;
+		width: 100%;
+		padding: 0 5px;
+		text-align: center;
+		vertical-align: top;
+
+		a{
+			display: inline-block;
+			width: 27px;
+			height: 35px;
+			margin-top: -6px;
+  			margin-left: 10px;
+			background: url("./../img/htmlacademy.svg") no-repeat center center;
+		}
+	}
+}

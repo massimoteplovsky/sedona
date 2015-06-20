@@ -1,0 +1,35 @@
+.intro{
+
+	.intro-preview{
+		height: 390px;
+		background: url("./../img/text-welcome.svg") no-repeat center 50px,
+					url("./../img/text-tothegorgeous.svg") no-repeat center 95px,
+					url("./../img/text-sedona.svg") no-repeat center 175px,
+					url("./../img/text-becausecanyon.svg") no-repeat center 290px,
+					url("./../img/intro-triangle.svg") no-repeat center bottom,
+					url("./../img/photo-background@1x.jpg") no-repeat left top;
+					
+		background-size: 140px 35px, auto, 280px 45px, 190px 60px, 200%,
+						 100% 390px; 
+	}
+	
+	.description-block{
+		padding-top: 45px;
+		padding-bottom: 35px;
+
+		.description{
+			margin-bottom: 40px;
+			padding: 0 25px;
+			font-size: $f-size1;
+			font-weight: bold;
+			line-height: 26px;
+			text-align: center;
+		}
+
+		.reasons{
+			padding: 0 20px;
+			line-height: 26px;
+			text-align: center;
+		}
+	}
+}
