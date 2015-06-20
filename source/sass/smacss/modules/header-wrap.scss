@@ -1,0 +1,69 @@
+.header-wrap{
+	
+	.main-nav{
+
+		ul{
+			position: relative;
+		}
+
+		li{
+			background: $bg1;
+			border-top: 1px solid #9AC2DB;
+			border-bottom: 1px solid #678FA8;
+			
+			&:first-child{
+
+				.close{
+					position: absolute;
+					top: 16px;
+					right: 20px;
+					width: 23px;
+					height: 23px;
+					text-indent: -9999px;
+					background: url("./../img/icon-cross.svg") no-repeat;
+				}
+			}
+
+			&:last-child{
+				border-bottom: none;
+				box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.2);
+
+			}
+		}
+		
+		a{
+			font-size: $f-size1;
+			font-weight: bold;
+			line-height: 55px;
+			text-align: center;
+			color: $f-color2;
+
+		}
+	}
+	
+	.menu-module{
+		position: relative;
+		height: 55px;
+		padding: $pad-sides20;
+
+		.logo{
+			height: 70px;
+			width: 138px;
+			margin: 0 auto;
+			text-indent: -9999px;
+			background: url("./../img/logo-sedona@1x.png") no-repeat;
+		}
+
+		.menu-burger{
+			position: absolute;
+			top: 17px;
+			right: 20px;
+			width: 23px;
+			height: 22px;
+			text-indent: -9999px;
+			background: url("./../img/icon-menu.svg") no-repeat;
+		}
+
+	}
+}
+

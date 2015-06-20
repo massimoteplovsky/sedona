@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: PT sans, Verdana, sans-serif;
+    font-size: $f-size;
+    text-transform: uppercase;
+    color: $f-color;
+    line-height: 1.5;
+    counter-reset: num;
+}
+
+a{
+    text-decoration: none;
+    display: block;
+}
+
+ul{
+    list-style: none;
+}
+
+.clearfix{
+    display: table;
+    clear: both;
+}
+
