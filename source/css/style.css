@@ -60,6 +60,12 @@ ul {
   line-height: 55px;
   text-align: center;
   color: #ffffff; }
+  .header-wrap .main-nav a:hover {
+    background: #669EC0; }
+  .header-wrap .main-nav a:active {
+    background: #5496BD;
+    color: rgba(255, 255, 255, 0.3);
+    border-color: transparent; }
 .header-wrap .menu-module {
   position: relative;
   height: 55px;
@@ -275,3 +281,153 @@ ul {
       margin-top: -6px;
       margin-left: 10px;
       background: url("./../img/htmlacademy.svg") no-repeat center center; }
+      .footer-wrapper .manufactured a:hover {
+        background: url("./../img/htmlacademy-hover.svg") no-repeat center center; }
+      .footer-wrapper .manufactured a:active {
+        background: url("./../img/htmlacademy.svg") no-repeat center center;
+        opacity: .3; }
+
+.bg-preview {
+  height: 160px;
+  background: url("./../img/text-sedona.svg") no-repeat center 50px, url("./../img/intro-triangle.svg") no-repeat center bottom, url("./../img/photo-background@1x.jpg") no-repeat left top;
+  background-size: 180px 30px, 200%, 100% 160px; }
+
+.blog-wrap .blog-intro {
+  padding: 50px 35px;
+  border-bottom: 2px solid #EEEEEE; }
+  .blog-wrap .blog-intro h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold; }
+  .blog-wrap .blog-intro p {
+    padding: 0 15px;
+    text-align: center;
+    line-height: 24px; }
+.blog-wrap .article {
+  padding: 40px 0;
+  border-bottom: 2px solid #EEEEEE; }
+  .blog-wrap .article:last-child {
+    border-bottom: none; }
+  .blog-wrap .article h2 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold; }
+  .blog-wrap .article p {
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 24px; }
+  .blog-wrap .article .article-info {
+    float: left; }
+    .blog-wrap .article .article-info li {
+      float: left; }
+    .blog-wrap .article .article-info a {
+      width: 130px;
+      padding-left: 25px;
+      color: #C6C6C6;
+      font-style: italic; }
+
+.pagination {
+  padding: 45px 0px 35px;
+  border-top: 2px solid #EEEEEE;
+  border-bottom: 2px solid #EEEEEE;
+  overflow: hidden; }
+  .pagination li {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px; }
+  .pagination a {
+    width: 60px;
+    line-height: 60px;
+    font-size: 21px;
+    text-align: center;
+    color: #ffffff;
+    background: #81B3D2; }
+
+.post-wrap .post-intro {
+  padding: 50px 0 40px; }
+  .post-wrap .post-intro h1 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold; }
+  .post-wrap .post-intro p {
+    margin-bottom: 30px;
+    padding: 0 20px;
+    text-align: center;
+    line-height: 24px; }
+  .post-wrap .post-intro .article-info {
+    float: left; }
+    .post-wrap .post-intro .article-info li {
+      float: left; }
+    .post-wrap .post-intro .article-info a {
+      width: 130px;
+      padding-left: 25px;
+      color: #C6C6C6;
+      font-style: italic; }
+.post-wrap p {
+  line-height: 26px; }
+.post-wrap ul.list {
+  margin: 40px 0; }
+  .post-wrap ul.list li {
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 20px;
+    font-weight: bold; }
+    .post-wrap ul.list li:before {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 0;
+      width: 7px;
+      height: 7px;
+      background: #81B3D2; }
+.post-wrap blockquote {
+  margin: 40px 0;
+  padding-left: 20px;
+  border-left: 3px solid #81B3D2;
+  line-height: 24px; }
+  .post-wrap blockquote span {
+    text-transform: none;
+    font-style: italic;
+    color: #766357; }
+.post-wrap .main-title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold; }
+.post-wrap .main-title + p {
+  margin-bottom: 40px;
+  font-size: 18px;
+  text-align: center;
+  text-transform: none;
+  line-height: 26px;
+  color: #766357; }
+.post-wrap .section-title {
+  margin-top: 45px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  font-weight: bold; }
+
+.post-navigation {
+  padding: 45px 15px;
+  border-top: 2px solid #EEEEEE;
+  border-bottom: 2px solid #EEEEEE;
+  overflow: hidden; }
+  .post-navigation li {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px; }
+  .post-navigation .prev,
+  .post-navigation .next {
+    width: 130px; }
+  .post-navigation .prev {
+    margin-right: 20px; }
+  .post-navigation a {
+    line-height: 56px;
+    font-size: 21px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    border: 2px solid #81B3D2; }
