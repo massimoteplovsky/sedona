@@ -1,0 +1,22 @@
+.pagination{
+	padding: 45px 0px 35px;
+	border-top: 2px solid $bg2;
+	border-bottom: 2px solid $bg2;
+	overflow: hidden;
+	
+	li{
+		float: left;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+
+	a{
+		width: 60px;
+		line-height: 60px;
+		font-size: $f-size3;
+		text-align: center;
+		color: $f-color2;
+		background: $bg1;
+	}
+
+}
