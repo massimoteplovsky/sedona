@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="sass/smacss/base/reset.scss">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- header begin -->
+	<div class="l-page-header">
+		<div class="header-wrap">
+			<nav class="main-nav">
+				<ul>
+					<li><a href="#">Карта штата</a><a href="#" class="close" title="Close">Закрыть</a></li>
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Фото и видео</a></li>
+					<li><a href="#">Гостиницы</a></li>
+				</ul>
+			</nav>
+			<div class="menu-module">
+				<a class="logo" href="index.html" title="Go to the main page">Sedona logo</a>
+				<a class="menu-burger" href="#" title="Show menu">Menu</a>
+			</div>	
+		</div>
+		<div class="bg-preview"></div>	
+	</div>
+	<!-- header end -->
+	
+	<!-- main-content begin -->
+	<div class="l-main-content">
+
+
+		<div class="form-wrap">
+
+			<div class="l-centrify">
+				<div class="form-intro">
+					<h1>Оставьте свой отзыв</h1>
+					<p>
+						Помогите нашим отелям стать лучше! оставьте отзыв о них,
+						 а также о посещенных вами достопримечательностях
+					</p>
+				</div>
+			</div>
+
+
+			<form action="/" method="post" class="form">
+
+				<div class="form-introduction-block">
+					<div class="l-centrify">
+						<h2 class="form-block-title">Представтесь, пожалуйста:</h2>
+						<div class="lastname">
+							<label for="lastname">Фамилия:<span>*</span></label>
+							<input type="text" id="lastname" name="lastname" placeholder="Петров">
+						</div>
+						<div class="name">
+							<label for="name">Имя:<span>*</span></label>
+							<input type="text" id="name" name="name" placeholder="Андрей">
+						</div>
+						<div class="middlename">
+							<label for="middlename">Отчество:</label>
+							<input type="text" id="middlename" name="middlename" placeholder="Александрович">
+						</div>
+					</div>
+				</div>
+
+				<div class="form-impression-block">
+					<div class="l-centrify">
+						<h2 class="form-block-title">Ваше общее впечатление:</h2>
+						<div class="radio-wrap">
+							<div class="positive">
+								<input type="radio" name="impression" id="positive" checked><label for="positive">Скорее положительное</label>
+							</div>
+							<div class="negative">
+								<input type="radio" name="impression" id="negative"><label for="negative">Скорее отрицательное</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-trip-block">
+					<div class="l-centrify">
+						<h2 class="form-block-title">Дата вашей поездки:</h2>
+						<div class="arrival-date">
+							<label for="arrival-date">Дата приезда:<span>*</span></label>
+							<input type="text" id="arrival-date" name="arrive" placeholder="4 июля 2015">
+						</div>
+						<div class="counter-wrapper">
+							<label for="days">Длительность пребывания<span>*</span></label>
+							<div class="arrive-counter">
+								<span class="plus">+</span>
+								<input type="text" id="days" name="days" value="14" placeholder="дня(ей)">
+								<span class="minus">-</span>
+							</div>
+						</div>
+						<div class="depature-date">
+							<label for="depature">Дата отъезда<span>*</span></label>
+							<input type="text" id="depature" name="depature" placeholder="28 июля 2015">
+						</div>
+					</div>
+				</div>
+
+				<div class="form-travelers-block">
+					<div class="l-centrify">
+						<h2 class="form-block-title">Кол-во путешественников:</h2>
+						<div class="counter-wrapper">
+							<label for="days">Количество путешественников:<span>*</span></label>
+							<div class="traveler-counter">
+								<span class="plus">+</span>
+								<input type="text" id="days" name="days" value="2" placeholder="дня(ей)">
+								<span class="minus">-</span>
+							</div>
+						</div>
+						<div class="traveler">
+							<span class="number">1</span>
+							<div class="traveler-info">
+								<div class="lastname">
+									<label for="lastname">Фамилия:<span>*</span></label>
+									<input type="text" id="lastname" name="lastname" placeholder="Иванов">
+								</div>
+								<div class="name">
+									<label for="name">Имя:<span>*</span></label>
+									<input type="text" id="name" name="name" placeholder="Петр">
+								</div>
+								<div class="middlename">
+									<label for="middlename">Отчество:</label>
+									<input type="text" id="middlename" name="middlename" placeholder="Александрович">
+								</div>
+							</div>
+						</div>
+						<div class="traveler">
+							<span class="number">2</span>
+							<div class="traveler-info">
+								<div class="lastname">
+									<label for="lastname">Фамилия:<span>*</span></label>
+									<input type="text" id="lastname" name="lastname" placeholder="Иванов">
+								</div>
+								<div class="name">
+									<label for="name">Имя:<span>*</span></label>
+									<input type="text" id="name" name="name" placeholder="Петр">
+								</div>
+								<div class="middlename">
+									<label for="middlename">Отчество:</label>
+									<input type="text" id="middlename" name="middlename" placeholder="Александрович">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="sightseeings">
+					<div class="l-centrify">
+						<h2 class="form-block-title">Посещенные достопримечательности:</h2>
+						<div class="checks-wrapper">
+							<div><input type="checkbox" id="devil-bridge" name="devil-bridge" checked><label for="devil-bridge">Мост Дьявола</label></div>
+							<div><input type="checkbox" id="slide-park" name="slide-park"><label for="slide-park">Слайд-парк</label></div>
+							<div><input type="checkbox" id="mounting-bell" name="mounting-bell" checked><label for="mounting-bell">Гора-колокол</label></div>
+							<div><input type="checkbox" id="red-rocks" name="red-rocks" checked><label for="red-rocks" >Красные скалы</label></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="photo-block">
+					<div class="l-centrify">
+
+						<div class="unsuccess">
+							<h2 class="form-block-title">Что-то пошло не так</h2>
+							<p>
+							Проверьте поля, выделенные красным,
+							 скорее всего вы забыли их заполнить
+							 </p>
+							<button class="ok">OK</button> 
+						</div>
+
+						<div class="successful">
+							<h2 class="form-block-title">Ваш отзыв отправлен!</h2>
+							<p>
+							Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+							В ближайшее время мы опубликуем его на сайте.
+							 </p>
+							<button class="close">Закрыть окно</button> 
+						</div>
+
+						<h2 class="form-block-title">Загрузите фотографии:</h2>
+						<label class="file-upload">
+        					<span class="button">Выбрать фотографии</span>
+        					<input type="file">
+    					</label>
+						<div class="photo-wrapper">
+							<div class="img-wrapper"><img src="" alt=""><span class="delete-btn"></span></div>
+							<div class="img-wrapper"><img src="" alt=""><span class="delete-btn"></span></div>
+							<div class="img-wrapper"><img src="" alt=""><span class="delete-btn"></span></div>
+							<div class="img-wrapper"><img src="" alt=""><span class="delete-btn"></span></div>
+							<div class="img-wrapper"><img src="" alt=""><span class="delete-btn"></span></div>
+							<div class="img-wrapper"><img src="" alt=""><span class="delete-btn"></span></div>
+							<div class="img-wrapper"><img src="" alt=""><span class="delete-btn"></span></div>
+						</div>
+					</div>	
+				</div>
+				
+				<button type="submit" class="form-send">Отправить отзыв</button>
+
+			</form>
+
+		</div>
+	</div>
+	<!-- main content end -->
+
+
+	<!-- footer begin -->
+	<footer class="l-page-footer">
+		<div class="l-centrify clerafix">
+			<div class="footer-wrapper clearfix">
+				<div class="visitlink"><a href="index.html">#VISITSEDONA</a></div>
+				<ul class="social">
+					<li><a href="www.twitter.com" class="twitter">Twitter</a></li>
+					<li><a href="www.facebook.com" class="facebook">Facebook</a></li>
+					<li><a href="www.youtube.com" class="youtube">Youtube</a></li>
+				</ul>	
+				<div class="manufactured">Разработано<a href="www.htmlacademy.ru" class="htmlacademy"></a></div>
+			</div>
+		</div>	
+	</footer>
+	<!-- footer end -->
+
+
+</body>
+</html>
