@@ -1,0 +1,432 @@
+.form-wrap{
+
+	.form-intro{
+		padding-top: 75px;
+		padding-bottom: 20px;
+
+		h1{
+			margin-bottom: 35px;
+			font-size: $f-size1;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		p{
+			line-height: 24px;
+			text-align: center;
+		}
+	}
+
+	.form{
+
+		&>div{
+			padding: 25px 0;
+			border-top: 2px solid $bg2;
+		}
+
+		label{
+			position: relative;
+			display: block;
+			padding-left: 20px;
+
+			span{
+				margin-left: 6px;
+				color: #ff0000;
+			}
+		}
+
+		input{
+			display: block;
+			width: 100%;
+			padding: 0;
+			font-size: $f-size1;
+			line-height: 60px;
+			text-transform: none;
+			color: $f-color;
+			background: #F2F2F2;
+			border: none;
+
+			&[type="text"]{
+				padding-left: 20px;
+			}
+		}
+
+		.form-block-title{
+			margin-bottom: 35px;
+			font-size: $f-size1;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		.form-introduction-block{
+
+			div:not(:last-child){
+				margin-bottom: 25px;
+			}
+
+			label{
+				margin-bottom: 15px;
+			}
+
+		}
+
+		.form-impression-block{
+			
+			.radio-wrap{
+
+				div{
+					margin-bottom: 50px;
+
+					&:last-child{
+						margin-bottom: 25px;
+					}
+				}
+
+			}
+
+			label{
+				position: relative;
+				padding-left: 70px;
+
+				&::before{
+					content: "";
+					position: absolute;
+					top: -15px;
+					left: 0;
+					width: 55px;
+					height: 55px;
+					border-radius: 50%;
+					background: $bg2;
+				}
+			}
+
+			input{
+				display: none;
+
+				&:checked ~ label:after{
+					content: "";
+					position: absolute;
+					top: 2px;
+					left: 18px;
+					width: 20px;
+					height: 20px;
+					border-radius: 50%;
+					background: #000000;
+				}
+			}
+
+		}
+
+		.form-trip-block{
+			
+			div:not(:last-child){
+				margin-bottom: 25px;
+			}
+
+			label{
+				margin-bottom: 15px;
+			}
+			
+			.counter-wrapper{
+				overflow: hidden;
+			}
+
+			.arrive-counter{
+				
+				overflow: hidden;
+
+				span{
+					float: left;
+					width: 60px;
+					margin-right: 10px;
+					font-size: $f-size1;
+					font-weight: bold;
+					text-align: center;
+					line-height: 60px;
+					background: $bg2;
+					cursor: pointer;
+					
+					&:last-child{margin-right: 0;}
+				}
+
+				input{
+					width: 140px;
+					float: left;
+					margin-right: 10px;
+				}
+
+			}
+
+			.depature-date{
+
+				input{
+					line-height: 56px;
+					border: 2px solid #B8B8B8;
+				}
+
+			}
+
+		}
+
+		.form-travelers-block{
+
+			div:not(:last-child){
+				margin-bottom: 25px;
+			}
+
+			label{
+				margin-bottom: 15px;
+			}
+
+		}
+
+		.traveler-counter{
+
+			overflow: hidden;
+
+				span{
+					float: left;
+					width: 60px;
+					margin-right: 10px;
+					font-size: $f-size1;
+					font-weight: bold;
+					text-align: center;
+					line-height: 60px;
+					background: $bg2;
+					cursor: pointer;
+					
+					&:last-child{margin-right: 0;}
+				}
+
+				input{
+					width: 140px;
+					float: left;
+					margin-right: 10px;
+				}
+
+		}
+
+		.traveler{
+			
+			overflow: hidden;
+
+			.number{
+				float: left;
+				width: 60px;
+				margin-top: 36px;
+				margin-right: 10px;
+				font-size: $f-size1;
+				font-weight: bold;
+				text-align: center;
+				line-height: 60px;
+				background: $bg2;
+			}
+
+			.traveler-info{
+				float: right;
+				width: 210px;
+			}
+
+		}
+
+		.sightseeings{
+
+			.checks-wrapper{
+
+				div{
+					margin-bottom: 70px;
+				}
+
+				label{
+					position: relative;
+					padding-left: 80px;
+
+					&:before{
+						content: "";
+						position: absolute;
+						top: -19px;
+						left: 0;
+						display: block;
+						width: 60px;
+						height: 60px;
+						border-radius: 10px;
+						background: $bg2;
+					}
+
+				}
+
+				input{
+
+					display: none;
+
+					&:checked ~ label:after{
+
+						content: "";
+						position: absolute;
+						top: -5px;
+  						left: 23px;
+						display: block;
+						width: 10px;
+						height: 20px;
+						border: 5px solid #000000;
+						border-top: none;
+						border-left: none;
+						background: $bg2;
+						transform: rotate(40deg);
+					}
+				}
+
+			}
+
+		}
+
+		.photo-block{
+			position: relative;
+			padding-bottom: 15px;
+			
+			.unsuccess{
+				position: absolute;
+  				width: 320px;
+  				top: 0px;
+  				display: none;
+  				margin: 0 -20px;
+  				padding-top: 40px;
+  				padding-bottom: 15px;
+  				background: #ffffff;
+  				box-shadow: 0px 19px 15px -15px rgba(0, 0, 0, 0.15);
+  				z-index: 100;
+
+				p{
+					margin-bottom: 30px;
+					padding: 0 35px;
+					line-height: 24px;
+					text-align: center;
+				}
+				
+				button{
+					display: block;
+					width: 180px;
+					margin: 0 auto;
+					margin-bottom: 25px;
+					line-height: 60px;
+					text-align: center;
+					font-size: $f-size1;
+					font-weight: bold;
+					color: $f-color2;
+					border: none;
+					background: $bg1;
+					cursor: pointer;
+				}
+
+			}
+
+			.successful{
+				position: absolute;
+  				width: 320px;
+  				top: 350px;
+  				display: none;
+  				margin: 0 -20px;
+  				padding-top: 40px;
+  				background: #ffffff;
+  				box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
+  				z-index: 100;
+
+  				p{
+					margin-bottom: 30px;
+					padding: 0 35px;
+					line-height: 24px;
+					text-align: center;
+				}
+				
+				button{
+					display: block;
+					width: 280px;
+					margin: 0 auto;
+					line-height: 60px;
+					text-align: center;
+					font-size: $f-size1;
+					font-weight: bold;
+					color: $f-color2;
+					text-transform: uppercase;
+					border: 20px solid $bg2;
+					background: $bg1;
+					cursor: pointer;
+				}
+			}
+
+			.photo-wrapper{
+				
+				float: left;
+				margin-left: -17.5px;
+  				margin-right: -17.5px;
+
+				.img-wrapper{
+					position: relative;
+					float: left;
+					margin-right: 17.5px;
+					margin-left: 17.5px;
+					margin-bottom: 35px;
+					
+					img{
+						display: block;
+						max-width: 100%;
+						width: 70px;
+						height: 70px;
+					}
+
+					span{
+						position: absolute;
+						top: -15px;
+						left: 20px;
+						display: block;
+						width: 30px;
+						height: 30px;
+						border-radius: 50%;
+						background: $bg2;
+					}
+				}
+
+			}
+
+		}
+		
+		.file-upload{
+			
+			padding-left: 0;
+			cursor: pointer;
+
+			input{
+				display: none;
+			}
+
+			.button{
+				display: block;
+				margin: 0;
+				margin-bottom: 55px;
+				line-height: 60px;
+				text-align: center;
+				font-size: $f-size3;
+				color: $f-color3;
+				background: #F2F2F2;
+			}
+
+		}
+
+		.form-send{
+			display: block;
+			width: 280px;
+			margin: 0 auto;
+			margin-bottom: 80px;
+			font-size: $f-size3;
+			font-weight: bold;
+			color: $f-color2;
+			line-height: 60px;
+			text-transform: uppercase;
+			border: none;
+			background: $bg1;
+			clear: both;
+		}
+
+	}
+
+}

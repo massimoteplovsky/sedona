@@ -19,6 +19,18 @@ a {
 ul {
   list-style: none; }
 
+::-webkit-input-placeholder {
+  color: #000000; }
+
+::-moz-placeholder {
+  color: #000000; }
+
+:-moz-placeholder {
+  color: #000000; }
+
+:-ms-input-placeholder {
+  color: #000000; }
+
 .clearfix {
   display: table;
   clear: both; }
@@ -301,7 +313,6 @@ ul {
     font-size: 30px;
     font-weight: bold; }
   .blog-wrap .blog-intro p {
-    padding: 0 15px;
     text-align: center;
     line-height: 24px; }
 .blog-wrap .article {
@@ -431,3 +442,279 @@ ul {
     text-align: center;
     color: #000000;
     border: 2px solid #81B3D2; }
+
+.form-wrap .form-intro {
+  padding-top: 75px;
+  padding-bottom: 20px; }
+  .form-wrap .form-intro h1 {
+    margin-bottom: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center; }
+  .form-wrap .form-intro p {
+    line-height: 24px;
+    text-align: center; }
+.form-wrap .form > div {
+  padding: 25px 0;
+  border-top: 2px solid #EEEEEE; }
+.form-wrap .form label {
+  position: relative;
+  display: block;
+  padding-left: 20px; }
+  .form-wrap .form label span {
+    margin-left: 6px;
+    color: #ff0000; }
+.form-wrap .form input {
+  display: block;
+  width: 100%;
+  padding: 0;
+  font-size: 18px;
+  line-height: 60px;
+  text-transform: none;
+  color: #000000;
+  background: #F2F2F2;
+  border: none; }
+  .form-wrap .form input[type="text"] {
+    padding-left: 20px; }
+.form-wrap .form .form-block-title {
+  margin-bottom: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center; }
+.form-wrap .form .form-introduction-block div:not(:last-child) {
+  margin-bottom: 25px; }
+.form-wrap .form .form-introduction-block label {
+  margin-bottom: 15px; }
+.form-wrap .form .form-impression-block .radio-wrap div {
+  margin-bottom: 50px; }
+  .form-wrap .form .form-impression-block .radio-wrap div:last-child {
+    margin-bottom: 25px; }
+.form-wrap .form .form-impression-block label {
+  position: relative;
+  padding-left: 70px; }
+  .form-wrap .form .form-impression-block label::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #EEEEEE; }
+.form-wrap .form .form-impression-block input {
+  display: none; }
+  .form-wrap .form .form-impression-block input:checked ~ label:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 18px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #000000; }
+.form-wrap .form .form-trip-block div:not(:last-child) {
+  margin-bottom: 25px; }
+.form-wrap .form .form-trip-block label {
+  margin-bottom: 15px; }
+.form-wrap .form .form-trip-block .counter-wrapper {
+  overflow: hidden; }
+.form-wrap .form .form-trip-block .arrive-counter {
+  overflow: hidden; }
+  .form-wrap .form .form-trip-block .arrive-counter span {
+    float: left;
+    width: 60px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    background: #EEEEEE;
+    cursor: pointer; }
+    .form-wrap .form .form-trip-block .arrive-counter span:last-child {
+      margin-right: 0; }
+  .form-wrap .form .form-trip-block .arrive-counter input {
+    width: 140px;
+    float: left;
+    margin-right: 10px; }
+.form-wrap .form .form-trip-block .depature-date input {
+  line-height: 56px;
+  border: 2px solid #B8B8B8; }
+.form-wrap .form .form-travelers-block div:not(:last-child) {
+  margin-bottom: 25px; }
+.form-wrap .form .form-travelers-block label {
+  margin-bottom: 15px; }
+.form-wrap .form .traveler-counter {
+  overflow: hidden; }
+  .form-wrap .form .traveler-counter span {
+    float: left;
+    width: 60px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    background: #EEEEEE;
+    cursor: pointer; }
+    .form-wrap .form .traveler-counter span:last-child {
+      margin-right: 0; }
+  .form-wrap .form .traveler-counter input {
+    width: 140px;
+    float: left;
+    margin-right: 10px; }
+.form-wrap .form .traveler {
+  overflow: hidden; }
+  .form-wrap .form .traveler .number {
+    float: left;
+    width: 60px;
+    margin-top: 36px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    background: #EEEEEE; }
+  .form-wrap .form .traveler .traveler-info {
+    float: right;
+    width: 210px; }
+.form-wrap .form .sightseeings .checks-wrapper div {
+  margin-bottom: 70px; }
+.form-wrap .form .sightseeings .checks-wrapper label {
+  position: relative;
+  padding-left: 80px; }
+  .form-wrap .form .sightseeings .checks-wrapper label:before {
+    content: "";
+    position: absolute;
+    top: -19px;
+    left: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    background: #EEEEEE; }
+.form-wrap .form .sightseeings .checks-wrapper input {
+  display: none; }
+  .form-wrap .form .sightseeings .checks-wrapper input:checked ~ label:after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 23px;
+    display: block;
+    width: 10px;
+    height: 20px;
+    border: 5px solid #000000;
+    border-top: none;
+    border-left: none;
+    background: #EEEEEE;
+    -webkit-transform: rotate(40deg);
+            transform: rotate(40deg); }
+.form-wrap .form .photo-block {
+  position: relative;
+  padding-bottom: 15px; }
+  .form-wrap .form .photo-block .unsuccess {
+    position: absolute;
+    width: 320px;
+    top: 0px;
+    display: none;
+    margin: 0 -20px;
+    padding-top: 40px;
+    padding-bottom: 15px;
+    background: #ffffff;
+    box-shadow: 0px 19px 15px -15px rgba(0, 0, 0, 0.15);
+    z-index: 100; }
+    .form-wrap .form .photo-block .unsuccess p {
+      margin-bottom: 30px;
+      padding: 0 35px;
+      line-height: 24px;
+      text-align: center; }
+    .form-wrap .form .photo-block .unsuccess button {
+      display: block;
+      width: 180px;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      line-height: 60px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+      border: none;
+      background: #81B3D2;
+      cursor: pointer; }
+  .form-wrap .form .photo-block .successful {
+    position: absolute;
+    width: 320px;
+    top: 350px;
+    display: none;
+    margin: 0 -20px;
+    padding-top: 40px;
+    background: #ffffff;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.15);
+    z-index: 100; }
+    .form-wrap .form .photo-block .successful p {
+      margin-bottom: 30px;
+      padding: 0 35px;
+      line-height: 24px;
+      text-align: center; }
+    .form-wrap .form .photo-block .successful button {
+      display: block;
+      width: 280px;
+      margin: 0 auto;
+      line-height: 60px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+      text-transform: uppercase;
+      border: 20px solid #EEEEEE;
+      background: #81B3D2;
+      cursor: pointer; }
+  .form-wrap .form .photo-block .photo-wrapper {
+    float: left;
+    margin-left: -17.5px;
+    margin-right: -17.5px; }
+    .form-wrap .form .photo-block .photo-wrapper .img-wrapper {
+      position: relative;
+      float: left;
+      margin-right: 17.5px;
+      margin-left: 17.5px;
+      margin-bottom: 35px; }
+      .form-wrap .form .photo-block .photo-wrapper .img-wrapper img {
+        display: block;
+        max-width: 100%;
+        width: 70px;
+        height: 70px; }
+      .form-wrap .form .photo-block .photo-wrapper .img-wrapper span {
+        position: absolute;
+        top: -15px;
+        left: 20px;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #EEEEEE; }
+.form-wrap .form .file-upload {
+  padding-left: 0;
+  cursor: pointer; }
+  .form-wrap .form .file-upload input {
+    display: none; }
+  .form-wrap .form .file-upload .button {
+    display: block;
+    margin: 0;
+    margin-bottom: 55px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 21px;
+    color: #C6C6C6;
+    background: #F2F2F2; }
+.form-wrap .form .form-send {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 60px;
+  text-transform: uppercase;
+  border: none;
+  background: #81B3D2;
+  clear: both; }

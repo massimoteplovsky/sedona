@@ -20,6 +20,11 @@ ul{
     list-style: none;
 }
 
+::-webkit-input-placeholder {color:$f-color;}
+::-moz-placeholder          {color:$f-color;}
+:-moz-placeholder           {color:$f-color;}
+:-ms-input-placeholder      {color:$f-color;}
+
 .clearfix{
     display: table;
     clear: both;
