@@ -45,3 +45,57 @@
 
 	}
 }	
+
+@media (min-width: 480px) and (max-width: 1200px) {
+
+	.data-section{
+
+		.suggestion{
+			
+			padding-top: 50px;
+
+			h2{
+				margin-bottom: 40px;
+				font-size: $f-size2;
+				font-weight: bold;
+				text-align: center;
+			}
+
+			p{	
+				margin-bottom: 40px;
+				text-align: center;
+				line-height: 24px;
+				padding: 0 165px;
+			}
+
+			.hotel-search{
+				display: block;
+				width: 455px;
+				height: 60px;
+				margin: 0 auto;
+				margin-bottom: 55px;
+				padding: 0;
+				font-size: $f-size1;
+				font-weight: bold;
+				color: $f-color2;
+				text-align: center;
+				text-transform: uppercase;
+				line-height: 60px;
+				background: $bg1;
+				border: none;
+
+				&:hover{
+					background: $bg1-darker;
+				}
+
+				&:active{
+					background: $bg1-darkest;
+					color: rgba(255, 255, 255, .3);
+					border-color: transparent;
+				}
+			}
+
+		}
+	}
+
+}

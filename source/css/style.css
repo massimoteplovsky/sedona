@@ -49,46 +49,82 @@ ul {
   margin: 0 auto;
   padding: 0 20px; }
 
-.header-wrap .main-nav ul {
-  position: relative; }
-.header-wrap .main-nav li {
-  background: #81B3D2;
-  border-top: 1px solid #9AC2DB;
-  border-bottom: 1px solid #678FA8; }
-  .header-wrap .main-nav li:first-child .close {
-    position: absolute;
-    top: 16px;
-    right: 20px;
-    width: 23px;
-    height: 23px;
-    text-indent: -9999px;
-    background: url("./../img/icon-cross.svg") no-repeat; }
-  .header-wrap .main-nav li:last-child {
-    border-bottom: none;
-    box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.2); }
-.header-wrap .main-nav a {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 55px;
-  text-align: center;
-  color: #ffffff; }
-  .header-wrap .main-nav a:hover {
-    background: #669EC0; }
-  .header-wrap .main-nav a:active {
-    background: #5496BD;
-    color: rgba(255, 255, 255, 0.3);
-    border-color: transparent; }
-.header-wrap .menu-module {
+@media (min-width: 480px) and (max-width: 1200px) {
+  .l-page-header {
+    min-width: 768px; }
+
+  .l-main-content {
+    min-width: 768px; }
+
+  .l-page-footer {
+    min-width: 768px; }
+
+  .l-centrify {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0px; } }
+.header-wrap .main-nav {
+  display: none; }
+  .header-wrap .main-nav ul {
+    position: relative; }
+  .header-wrap .main-nav li {
+    background: #81B3D2;
+    border-top: 1px solid #9AC2DB;
+    border-bottom: 1px solid #678FA8; }
+    .header-wrap .main-nav li:first-child .close {
+      position: absolute;
+      top: 16px;
+      right: 20px;
+      width: 23px;
+      height: 23px;
+      text-indent: -9999px;
+      background: url("./../img/icon-cross.svg") no-repeat; }
+    .header-wrap .main-nav li:last-child {
+      border-bottom: none;
+      box-shadow: inset 0px -2px 3px rgba(0, 0, 0, 0.2); }
+  .header-wrap .main-nav a {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 55px;
+    text-align: center;
+    color: #ffffff; }
+    .header-wrap .main-nav a:not(.logo):hover {
+      background: #669EC0; }
+    .header-wrap .main-nav a:not(.logo):active {
+      background: #5496BD;
+      color: rgba(255, 255, 255, 0.3);
+      border-color: transparent; }
+  .header-wrap .main-nav .link-logo {
+    position: relative;
+    display: block;
+    height: 55px;
+    padding: 0 20px; }
+    .header-wrap .main-nav .link-logo .logo {
+      height: 70px;
+      width: 138px;
+      margin: 0 auto;
+      text-indent: -9999px;
+      background: url("./../img/logo-sedona@1x.png") no-repeat; }
+    .header-wrap .main-nav .link-logo .menu-burger {
+      position: absolute;
+      top: 17px;
+      right: 20px;
+      width: 23px;
+      height: 22px;
+      text-indent: -9999px;
+      background: url("./../img/icon-menu.svg") no-repeat; }
+.header-wrap .mobile-module {
   position: relative;
+  display: block;
   height: 55px;
   padding: 0 20px; }
-  .header-wrap .menu-module .logo {
+  .header-wrap .mobile-module .logo {
     height: 70px;
     width: 138px;
     margin: 0 auto;
     text-indent: -9999px;
     background: url("./../img/logo-sedona@1x.png") no-repeat; }
-  .header-wrap .menu-module .menu-burger {
+  .header-wrap .mobile-module .menu-burger {
     position: absolute;
     top: 17px;
     right: 20px;
@@ -97,6 +133,44 @@ ul {
     text-indent: -9999px;
     background: url("./../img/icon-menu.svg") no-repeat; }
 
+@media (min-width: 480px) and (max-width: 1200px) {
+  .header-wrap .main-nav {
+    display: block; }
+    .header-wrap .main-nav ul {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .header-wrap .main-nav ul li {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 22%;
+        border: none;
+        background: #ffffff; }
+        .header-wrap .main-nav ul li .close {
+          display: none; }
+        .header-wrap .main-nav ul li:last-child {
+          box-shadow: none; }
+      .header-wrap .main-nav ul a {
+        color: #000000; }
+      .header-wrap .main-nav ul .link-info {
+        -webkit-order: -2;
+            -ms-flex-order: -2;
+                order: -2; }
+      .header-wrap .main-nav ul .link-media {
+        -webkit-order: -1;
+            -ms-flex-order: -1;
+                order: -1; }
+      .header-wrap .main-nav ul .link-logo {
+        width: 140px;
+        padding: 0;
+        -webkit-order: -1;
+            -ms-flex-order: -1;
+                order: -1; }
+        .header-wrap .main-nav ul .link-logo .menu-burger {
+          display: none; }
+  .header-wrap .mobile-module {
+    display: none; } }
 .intro .intro-preview {
   height: 390px;
   background: url("./../img/text-welcome.svg") no-repeat center 50px, url("./../img/text-tothegorgeous.svg") no-repeat center 95px, url("./../img/text-sedona.svg") no-repeat center 175px, url("./../img/text-becausecanyon.svg") no-repeat center 290px, url("./../img/intro-triangle.svg") no-repeat center bottom, url("./../img/photo-background@1x.jpg") no-repeat left top;
@@ -116,6 +190,19 @@ ul {
     line-height: 26px;
     text-align: center; }
 
+@media (min-width: 480px) and (max-width: 1200px) {
+  .intro .intro-preview {
+    height: 512px;
+    background: url("./../img/text-welcome.svg") no-repeat center 75px, url("./../img/text-tothegorgeous.svg") no-repeat center 135px, url("./../img/text-sedona.svg") no-repeat center 215px, url("./../img/text-becausecanyon.svg") no-repeat center 350px, url("./../img/intro-triangle.svg") no-repeat center bottom, url("./../img/photo-background@1x.jpg") no-repeat left top;
+    background-size: 190px 45px, 245px 20px, 460px 75px, 300px 70px, 102%, 100% 512px; }
+  .intro .description-block {
+    padding-top: 60px;
+    padding-bottom: 55px; }
+    .intro .description-block .description {
+      margin-bottom: 20px;
+      padding: 0 125px;
+      font-size: 21px;
+      font-weight: bold; } }
 .features {
   background: url("./../img/intro-triangle.svg") no-repeat center top; }
   .features-reason {
@@ -220,6 +307,83 @@ ul {
       width: 230px;
       margin-left: 50px; }
 
+@media (min-width: 480px) and (max-width: 1200px) {
+  .features {
+    overflow: hidden; }
+    .features .row {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      float: left;
+      width: 100%; }
+      .features .row > div {
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 33.33%; }
+      .features .row .features-image {
+        width: 66.66%; }
+      .features .row .features-reason p {
+        width: 165px; }
+      .features .row .reason3,
+      .features .row .reason4,
+      .features .row .reason5 {
+        padding-top: 35px;
+        border-bottom: none; }
+        .features .row .reason3 h2,
+        .features .row .reason4 h2,
+        .features .row .reason5 h2 {
+          color: #000000; }
+          .features .row .reason3 h2:before,
+          .features .row .reason4 h2:before,
+          .features .row .reason5 h2:before {
+            top: 89px;
+            background: #000000; }
+          .features .row .reason3 h2:after,
+          .features .row .reason4 h2:after,
+          .features .row .reason5 h2:after {
+            top: 75px;
+            background: #EEEEEE;
+            color: #000000; }
+        .features .row .reason3 p,
+        .features .row .reason4 p,
+        .features .row .reason5 p {
+          color: #000000; }
+      .features .row .infrastructure {
+        position: relative;
+        padding: 165px 0 45px; }
+        .features .row .infrastructure img {
+          position: absolute;
+          top: 60px;
+          left: 50%;
+          margin-left: -38px;
+          width: 76px;
+          height: 70px; }
+        .features .row .infrastructure h2 {
+          margin-left: 0px;
+          margin-bottom: 25px;
+          text-align: center;
+          font-size: 18px;
+          font-weight: bold; }
+        .features .row .infrastructure p {
+          width: 165px;
+          margin: 0 auto;
+          text-align: center; }
+    .features .second-row .souvenir {
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1; }
+    .features .third-row .image2 {
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-order: -1;
+          -ms-flex-order: -1;
+              order: -1; }
+    .features .fourth-row {
+      padding: 0px; }
+      .features .fourth-row .features-reason p {
+        width: 180px; } }
 .data-section .suggestion {
   padding-top: 30px; }
   .data-section .suggestion h2 {
@@ -252,6 +416,40 @@ ul {
       color: rgba(255, 255, 255, 0.3);
       border-color: transparent; }
 
+@media (min-width: 480px) and (max-width: 1200px) {
+  .data-section .suggestion {
+    padding-top: 50px; }
+    .data-section .suggestion h2 {
+      margin-bottom: 40px;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center; }
+    .data-section .suggestion p {
+      margin-bottom: 40px;
+      text-align: center;
+      line-height: 24px;
+      padding: 0 165px; }
+    .data-section .suggestion .hotel-search {
+      display: block;
+      width: 455px;
+      height: 60px;
+      margin: 0 auto;
+      margin-bottom: 55px;
+      padding: 0;
+      font-size: 18px;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      text-transform: uppercase;
+      line-height: 60px;
+      background: #81B3D2;
+      border: none; }
+      .data-section .suggestion .hotel-search:hover {
+        background: #669EC0; }
+      .data-section .suggestion .hotel-search:active {
+        background: #5496BD;
+        color: rgba(255, 255, 255, 0.3);
+        border-color: transparent; } }
 .footer-wrapper {
   width: 180px;
   margin: 0 auto;
@@ -290,7 +488,7 @@ ul {
       display: inline-block;
       width: 27px;
       height: 35px;
-      margin-top: -6px;
+      margin-top: -7px;
       margin-left: 10px;
       background: url("./../img/htmlacademy.svg") no-repeat center center; }
       .footer-wrapper .manufactured a:hover {
@@ -299,6 +497,22 @@ ul {
         background: url("./../img/htmlacademy.svg") no-repeat center center;
         opacity: .3; }
 
+@media (min-width: 480px) and (max-width: 1200px) {
+  .footer-wrapper {
+    width: 100%; }
+    .footer-wrapper .visitlink,
+    .footer-wrapper .social,
+    .footer-wrapper .manufactured {
+      float: left; }
+    .footer-wrapper .visitlink {
+      margin-top: 13px; }
+      .footer-wrapper .visitlink a {
+        margin-bottom: 0; }
+    .footer-wrapper .social {
+      margin: 0 165px; }
+    .footer-wrapper .manufactured {
+      width: 140px;
+      margin-top: 15px; } }
 .bg-preview {
   height: 160px;
   background: url("./../img/text-sedona.svg") no-repeat center 50px, url("./../img/intro-triangle.svg") no-repeat center bottom, url("./../img/photo-background@1x.jpg") no-repeat left top;
