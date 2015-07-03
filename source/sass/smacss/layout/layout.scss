@@ -15,3 +15,25 @@
 	margin: 0 auto;
 	padding: 0 20px;
 }
+
+@media (min-width: 480px) and (max-width: 1200px) {
+
+	.l-page-header{
+			min-width: 768px;
+	}
+
+	.l-main-content{
+		min-width: 768px;
+	}
+
+	.l-page-footer{
+		min-width: 768px;
+	}
+
+	.l-centrify{
+		width: 768px;
+		margin: 0 auto;
+		padding: 0px;
+	}	
+
+}
