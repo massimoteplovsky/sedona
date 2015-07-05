@@ -20,3 +20,47 @@
 	}
 
 }
+
+@media (min-width: 480px) and (max-width: 1200px) {
+
+	.pagination{
+		position: relative;
+		padding: 0px;
+		padding-top: 45px;
+		border-top: none;
+		border-bottom: none;
+		overflow: hidden;
+
+		&:before{
+			content: "page:";
+			display: block;
+			position: absolute;
+			top: 60px;
+			left: 140px;
+			font-size: $f-size3;
+			font-weight: bold;
+			color: $f-color;
+		}
+
+	ul{
+		padding-left: 212px;
+	}	
+		
+	li{
+		float: left;
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+
+	a{
+		width: 60px;
+		line-height: 60px;
+		font-size: $f-size3;
+		text-align: center;
+		color: $f-color2;
+		background: $bg1;
+	}
+
+}
+
+}
