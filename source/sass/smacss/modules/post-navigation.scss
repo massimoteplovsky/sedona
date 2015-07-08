@@ -29,3 +29,48 @@
 	}
 
 }
+
+@media (min-width: 480px) and (max-width: 1200px) {
+
+	.post-navigation{
+		padding: 0px;
+		border-top: none;
+		border-bottom: none;
+		
+		ul{
+			display: flex;
+			padding-left: 45px;
+		}
+
+		li{
+			float: none;
+			flex-direction: column;
+			width: 210px;
+			margin-right: 25px;
+			margin-bottom: 25px;
+		}
+
+		.prev,
+		.next{
+			width: 210px;
+			margin-right: 25px;
+		}
+		
+		.prev{
+			order: 0;
+		}
+
+		.next{
+			margin-right: 0;
+			order: 2;
+		}
+
+		.to-list{
+			order: 1;
+		}
+
+		
+
+	}
+
+}
