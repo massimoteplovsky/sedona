@@ -51,8 +51,7 @@
 	.manufactured{
 		float: left;
 		width: 100%;
-		padding: 0 5px;
-		text-align: center;
+		text-align: right;
 		vertical-align: top;
 
 		a{
@@ -80,6 +79,13 @@
 		.footer-wrapper{
 				
 			width: 100%;
+			padding: 40px 45px;
+
+			&:after{
+				content: "";
+				display: table;
+				clear: both;
+			}
 
 			.visitlink,
 			.social,
@@ -96,7 +102,8 @@
 			}
 
 			.social{
-				margin: 0 165px;
+				margin: 0 109px;
+  				margin-left: 135px;
 			}	
 
 			.manufactured{

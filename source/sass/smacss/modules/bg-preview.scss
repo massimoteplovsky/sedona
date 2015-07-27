@@ -8,3 +8,18 @@
 		background-size: 180px 30px, 200%, 100% 160px; 
 	
 }
+
+@media (min-width: 480px) and (max-width: 1200px) {
+
+		.bg-preview{
+
+			height: 290px;
+			background: url("./../img/text-sedona.svg") no-repeat center 100px,
+						url("./../img/intro-triangle.svg") no-repeat center bottom,
+						url("./../img/photo-background@1x.jpg") no-repeat left top;
+						
+			background-size: 460px 75px, 102%, 100% 290px; 
+	
+		}
+
+}
