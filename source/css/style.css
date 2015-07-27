@@ -1,5 +1,5 @@
 /*Typograghy*/
-/*Backgrouns*/
+/*Backgrounds*/
 /*basic rules*/
 * {
   box-sizing: border-box; }
@@ -32,7 +32,7 @@ ul {
   color: #000000; }
 
 .clearfix {
-  display: table;
+  display: block;
   clear: both; }
 
 .l-page-header {
@@ -501,6 +501,10 @@ ul {
   .footer-wrapper {
     width: 100%;
     padding: 40px 45px; }
+    .footer-wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }
     .footer-wrapper .visitlink,
     .footer-wrapper .social,
     .footer-wrapper .manufactured {
@@ -829,7 +833,7 @@ ul {
   line-height: 60px;
   text-transform: none;
   color: #000000;
-  background: #F2F2F2;
+  background: #EEEEEE;
   border: none; }
   .form-wrap .form input[type="text"] {
     padding-left: 20px; }
@@ -1077,16 +1081,307 @@ ul {
   clear: both; }
 
 @media (min-width: 480px) and (max-width: 1200px) {
-  .form-intro {
+  .form-wrap .form-intro {
     padding-top: 75px;
-    padding-bottom: 40px; }
-    .form-intro h1 {
+    padding-bottom: 80px; }
+    .form-wrap .form-intro h1 {
       margin-bottom: 40px;
       font-size: 30px;
       font-weight: bold;
       text-align: center; }
-    .form-intro p {
+    .form-wrap .form-intro p {
       margin-bottom: 0px;
+      padding: 0 160px;
       font-size: 14px;
       text-align: center;
-      line-height: 24px; } }
+      line-height: 24px; }
+  .form-wrap .form {
+    width: 768px;
+    padding: 0 60px;
+    margin: 0 auto; }
+    .form-wrap .form > div {
+      position: relative;
+      border-top: 2px solid #EEEEEE; }
+    .form-wrap .form .form-block-title {
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      margin-left: -200px;
+      width: 400px;
+      text-align: center;
+      font-size: 21px;
+      background: #ffffff; }
+    .form-wrap .form .l-centrify {
+      width: 648px; }
+    .form-wrap .form .form-introduction-block {
+      padding-top: 45px;
+      padding-bottom: 50px; }
+      .form-wrap .form .form-introduction-block:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .form-wrap .form .form-introduction-block .lastname,
+      .form-wrap .form .form-introduction-block .name,
+      .form-wrap .form .form-introduction-block .middlename {
+        float: left;
+        width: 175px;
+        margin-right: 60px; }
+      .form-wrap .form .form-introduction-block .middlename {
+        margin-bottom: 25px;
+        margin-right: 0px; }
+    .form-wrap .form .form-impression-block .radio-wrap {
+      padding: 75px 0; }
+      .form-wrap .form .form-impression-block .radio-wrap > div {
+        float: left; }
+        .form-wrap .form .form-impression-block .radio-wrap > div:nth-child(2n+1) {
+          float: right; }
+        .form-wrap .form .form-impression-block .radio-wrap > div label {
+          font-size: 18px;
+          font-weight: bold;
+          text-transform: none; }
+    .form-wrap .form div.form-trip-block {
+      padding-top: 45px;
+      padding-bottom: 50px; }
+      .form-wrap .form div.form-trip-block:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .form-wrap .form div.form-trip-block .l-centrify > div {
+        float: left;
+        width: 175px;
+        margin-right: 60px; }
+        .form-wrap .form div.form-trip-block .l-centrify > div:nth-child(3n+1) {
+          margin-right: 0px; }
+      .form-wrap .form div.form-trip-block .arrive-counter span,
+      .form-wrap .form div.form-trip-block .arrive-counter input {
+        margin-right: 0; }
+      .form-wrap .form div.form-trip-block .arrive-counter input {
+        width: 55px; }
+      .form-wrap .form div.form-trip-block .depature-date input {
+        line-height: 56px; }
+    .form-wrap .form .form-travelers-block {
+      padding-top: 45px;
+      padding-bottom: 90px; }
+      .form-wrap .form .form-travelers-block div:not(:last-child) {
+        margin-bottom: 35px; }
+      .form-wrap .form .form-travelers-block .counter-wrapper {
+        margin-bottom: 15px; }
+        .form-wrap .form .form-travelers-block .counter-wrapper label {
+          text-align: center; }
+        .form-wrap .form .form-travelers-block .counter-wrapper .traveler-counter {
+          width: 175px;
+          margin: 0 auto; }
+          .form-wrap .form .form-travelers-block .counter-wrapper .traveler-counter span,
+          .form-wrap .form .form-travelers-block .counter-wrapper .traveler-counter input {
+            margin-right: 0; }
+          .form-wrap .form .form-travelers-block .counter-wrapper .traveler-counter input {
+            width: 55px; }
+      .form-wrap .form .form-travelers-block .traveler span {
+        margin-right: 7px; }
+      .form-wrap .form .form-travelers-block .traveler .traveler-info {
+        float: right;
+        width: 581px; }
+        .form-wrap .form .form-travelers-block .traveler .traveler-info > div {
+          float: left;
+          width: 186px;
+          margin-right: 7px; }
+          .form-wrap .form .form-travelers-block .traveler .traveler-info > div:last-child {
+            margin-right: none; }
+    .form-wrap .form .sightseeings:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .form-wrap .form .sightseeings h2 {
+      top: -30px; }
+    .form-wrap .form .sightseeings .checks-wrapper {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      overflow: hidden;
+      padding: 70px 90px;
+      padding-bottom: 0; }
+      .form-wrap .form .sightseeings .checks-wrapper div {
+        width: 230px;
+        margin-bottom: 70px;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      .form-wrap .form .sightseeings .checks-wrapper label {
+        position: relative;
+        padding-left: 80px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: none; }
+        .form-wrap .form .sightseeings .checks-wrapper label:before {
+          content: "";
+          position: absolute;
+          top: -19px;
+          left: 0;
+          display: block;
+          width: 60px;
+          height: 60px;
+          border-radius: 10px;
+          background: #EEEEEE; }
+      .form-wrap .form .sightseeings .checks-wrapper input {
+        display: none; }
+        .form-wrap .form .sightseeings .checks-wrapper input:checked ~ label:after {
+          content: "";
+          position: absolute;
+          top: -5px;
+          left: 23px;
+          display: block;
+          width: 10px;
+          height: 20px;
+          border: 5px solid #000000;
+          border-top: none;
+          border-left: none;
+          background: #EEEEEE;
+          -webkit-transform: rotate(40deg);
+                  transform: rotate(40deg); }
+    .form-wrap .form .photo-block {
+      position: relative;
+      padding-top: 70px;
+      padding-bottom: 15px; }
+      .form-wrap .form .photo-block:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .form-wrap .form .photo-block .l-centrify:after {
+        content: "";
+        display: table;
+        clear: both; }
+      .form-wrap .form .photo-block .unsuccess {
+        position: absolute;
+        width: 400px;
+        top: -25px;
+        left: 50%;
+        display: block;
+        margin-left: -200px;
+        padding: 70px 65px 50px;
+        background: #ffffff;
+        box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+        z-index: 100; }
+        .form-wrap .form .photo-block .unsuccess h2.form-block-title {
+          width: initial;
+          position: static;
+          margin: 0 auto;
+          margin-bottom: 40px;
+          padding: 0 10px;
+          font-size: 30px;
+          line-height: 40px; }
+        .form-wrap .form .photo-block .unsuccess p {
+          margin: 0 -50px;
+          margin-bottom: 40px;
+          line-height: 26px;
+          text-align: center; }
+        .form-wrap .form .photo-block .unsuccess button {
+          display: block;
+          width: 275px;
+          margin: 0 auto;
+          margin-bottom: 0px;
+          line-height: 60px;
+          text-align: center;
+          font-size: 21px;
+          font-weight: bold;
+          color: #ffffff;
+          border: none;
+          background: #81B3D2;
+          cursor: pointer; }
+      .form-wrap .form .photo-block .successful {
+        position: absolute;
+        width: 640px;
+        top: 640px;
+        display: none;
+        margin: 0 auto;
+        padding-top: 60px;
+        background: #ffffff;
+        box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+        z-index: 100; }
+        .form-wrap .form .photo-block .successful h2 {
+          position: static;
+          margin: 0 auto;
+          margin-bottom: 40px;
+          font-size: 30px; }
+        .form-wrap .form .photo-block .successful p {
+          margin-bottom: 40px;
+          padding: 0 110px;
+          line-height: 24px;
+          text-align: center; }
+        .form-wrap .form .photo-block .successful button {
+          display: block;
+          width: 640px;
+          margin: 0 auto;
+          line-height: 60px;
+          text-align: center;
+          font-size: 18px;
+          font-weight: bold;
+          color: #ffffff;
+          text-transform: uppercase;
+          border-bottom: 45px solid #EEEEEE;
+          border-top: 45px solid #EEEEEE;
+          border-left: 90px solid #EEEEEE;
+          border-right: 90px solid #EEEEEE;
+          background: #81B3D2;
+          cursor: pointer; }
+      .form-wrap .form .photo-block .photo-wrapper {
+        float: left;
+        margin-left: -32.5px;
+        margin-right: -32.5px;
+        padding: 0 35px;
+        padding-top: 40px; }
+        .form-wrap .form .photo-block .photo-wrapper .img-wrapper {
+          position: relative;
+          float: left;
+          margin-right: 32.5px;
+          margin-left: 32.5px;
+          margin-bottom: 35px; }
+          .form-wrap .form .photo-block .photo-wrapper .img-wrapper .img-name {
+            display: block;
+            text-transform: uppercase; }
+          .form-wrap .form .photo-block .photo-wrapper .img-wrapper img {
+            display: block;
+            max-width: 100%;
+            width: 140px;
+            height: 140px;
+            margin-bottom: 20px; }
+          .form-wrap .form .photo-block .photo-wrapper .img-wrapper span {
+            position: absolute;
+            top: -30px;
+            left: 110px;
+            display: block;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #EEEEEE; }
+    .form-wrap .form .file-upload {
+      width: 460px;
+      margin: 0 auto;
+      padding-left: 0;
+      cursor: pointer; }
+      .form-wrap .form .file-upload input {
+        display: none; }
+      .form-wrap .form .file-upload .button {
+        display: block;
+        margin: 0;
+        margin-bottom: 55px;
+        line-height: 60px;
+        text-align: center;
+        font-size: 21px;
+        color: #C6C6C6;
+        background: #F2F2F2; }
+    .form-wrap .form .form-send {
+      display: block;
+      width: 460px;
+      margin: 0 auto;
+      margin-bottom: 100px;
+      font-size: 21px;
+      font-weight: bold;
+      color: #ffffff;
+      line-height: 60px;
+      text-transform: uppercase;
+      border: none;
+      background: #81B3D2;
+      clear: both; } }
