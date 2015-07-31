@@ -37,3 +37,25 @@
 	}	
 
 }
+
+@media (min-width: 1200px) {
+
+	.l-page-header{
+		min-width: 1200px;
+	}
+
+	.l-main-content{
+		min-width: 1200px;
+	}
+
+	.l-page-footer{
+		min-width: 1200px;
+	}
+
+	.l-centrify{
+		width: 1200px;
+		margin: 0 auto;
+		padding: 0px;
+	}	
+
+}

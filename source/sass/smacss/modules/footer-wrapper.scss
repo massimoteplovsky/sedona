@@ -51,7 +51,7 @@
 	.manufactured{
 		float: left;
 		width: 100%;
-		text-align: right;
+		text-align: center;
 		vertical-align: top;
 
 		a{
@@ -104,6 +104,47 @@
 			.social{
 				margin: 0 109px;
   				margin-left: 135px;
+			}	
+
+			.manufactured{
+				width: 140px;
+				margin-top: 15px;
+			}	
+
+		}
+
+}
+
+@media (min-width: 1200px) {
+
+		.footer-wrapper{
+				
+			width: 100%;
+			padding: 40px 120px;
+
+			&:after{
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			.visitlink,
+			.social,
+			.manufactured{
+				float: left;
+			}
+			
+			.visitlink{
+				margin-top: 13px;
+
+				a{
+					margin-bottom: 0;
+				}
+			}
+
+			.social{
+				margin: 0 260px;
+  				margin-left: 265px;
 			}	
 
 			.manufactured{
