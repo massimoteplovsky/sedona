@@ -353,6 +353,10 @@
 					cursor: pointer;
 				}
 			}
+			
+			.pull-images{
+					display: none;
+				}
 
 			.photo-wrapper{
 				
@@ -372,6 +376,10 @@
 						max-width: 100%;
 						width: 70px;
 						height: 70px;
+					}
+
+					.img-name{
+						display: none;
 					}
 
 					span{
@@ -810,6 +818,10 @@
 						cursor: pointer;
 					}
 				}
+				
+				.pull-images{
+					display: none;
+				}
 
 				.photo-wrapper{
 					
@@ -897,4 +909,489 @@
 		}
 	}	
 
+}
+
+@media (min-width: 1200px){
+
+	.form-wrap{
+
+		.form-intro{
+			padding: 75px 215px 85px;
+
+			h1{
+				margin-bottom: 40px;
+				font-size: $f-size2;
+				font-weight: bold;
+				text-align: center;
+			}
+
+			p{
+				margin-bottom: 0px;
+				padding: 0 160px;
+				font-size: $f-size;
+				text-align: center;
+				line-height: 24px;
+			}
+		}
+
+		.form{
+			width: 1200px;
+  			padding: 0 120px;
+  			margin: 0 auto;
+
+  			&>div{
+  				position: relative;
+  				border-top: 2px solid $bg2;
+  			}
+
+  			.form-block-title{
+				  position: absolute;
+				  top: -15px;
+				  left: 50%;
+				  margin-left: -200px;
+				  width: 400px;
+				  text-align: center;
+				  font-size: 21px;
+				  background: $bg;
+  			}
+
+			.l-centrify{
+				width: 960px;
+			}
+
+			.form-introduction-block{
+				padding-top: 45px;
+				padding-bottom: 50px;
+
+				&:after {
+				    content: "";
+				    display: table;
+				    clear: both;
+				}
+
+				.lastname,
+				.name,
+				.middlename{
+					float: left;
+					width: 280px;
+					margin-right: 60px;
+				}
+
+				.middlename{
+					margin-bottom: 25px;
+					margin-right: 0px;
+				}
+
+			}
+
+			.form-impression-block{
+			
+				.radio-wrap{
+					
+					padding: 75px 175px;
+
+					&>div{
+						float: left;
+
+						&:nth-child(2n+1){
+							float: right;
+						}
+
+						label{
+							font-size: $f-size1;
+							font-weight: bold;
+							text-transform: none;
+						}
+					}
+				}
+
+			}
+
+			div.form-trip-block{
+				
+				padding-top: 45px;
+				padding-bottom: 50px;
+
+				&:after {
+				    content: "";
+				    display: table;
+				    clear: both;
+				}
+
+				.l-centrify>div{
+					float: left;
+					width: 280px;
+					margin-right: 60px;
+
+					&:nth-child(3n+1){
+						margin-right: 0px;
+					}
+				}
+
+				.arrive-counter{
+					span,
+					input{
+						margin-right: 10px;
+					}
+
+					input{
+						width: 140px;
+					}
+				}
+
+				.depature-date{
+
+					input{
+						line-height: 56px;
+					}
+
+				}
+
+			}
+
+			.form-travelers-block{
+				padding-top: 45px;
+				padding-bottom: 90px;
+
+				div:not(:last-child) {
+					margin-bottom: 35px;
+				}
+
+
+				.counter-wrapper{
+					margin-bottom: 15px;
+
+					label{
+						text-align: left;
+					}
+
+					.traveler-counter{
+
+						width: 290px;
+						margin: 0;
+						clear: both;
+						
+						span,
+						input{
+							margin-right: 10px;
+						}
+
+						input{
+							width: 140px;
+						}
+
+					}
+
+				}
+
+				.traveler{
+					
+
+					span{
+						margin-right: 10px;
+					}
+
+					.traveler-info{
+						float: left;
+  						width: auto;
+						
+						div.lastname{
+							width: 210px;
+						}
+
+						&>div{
+							float: left;
+						    width: 280px;
+						    margin-right: 60px;
+
+							&:last-child{
+								margin-right: 0px;
+							}
+
+						}
+
+					}
+
+				}
+			}
+
+			.sightseeings{
+
+				&:after {
+				    content: "";
+				    display: table;
+				    clear: both;
+				}
+				
+				h2{
+					top: -30px;
+				}
+
+				.checks-wrapper{
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					overflow: hidden;
+					padding: 70px 0px;
+					padding-bottom: 0;
+					
+					div{
+						width: 230px;
+						margin-bottom: 70px;
+						flex-direction: column;
+					}
+					
+
+					label{
+						position: relative;
+						padding-left: 80px;
+						font-size: $f-size1;
+						font-weight: bold;
+						text-transform: none;
+
+						&:before{
+							content: "";
+							position: absolute;
+							top: -19px;
+							left: 0;
+							display: block;
+							width: 60px;
+							height: 60px;
+							border-radius: 10px;
+							background: $bg2;
+						}
+
+					}
+
+					input{
+
+						display: none;
+
+						&:checked ~ label:after{
+
+							content: "";
+							position: absolute;
+							top: -5px;
+	  						left: 23px;
+							display: block;
+							width: 10px;
+							height: 20px;
+							border: 5px solid #000000;
+							border-top: none;
+							border-left: none;
+							background: $bg2;
+							transform: rotate(40deg);
+						}
+					}
+
+				}
+
+			}
+
+			.photo-block{
+
+				&:after{
+					content: "";
+				    display: table;
+				    clear: both;
+				}
+
+				.l-centrify:after{
+					content: "";
+				    display: table;
+				    clear: both;
+				}
+
+				position: relative;
+				padding-top: 70px;
+				padding-bottom: 15px;
+				
+				.unsuccess{
+					position: absolute;
+					width: 400px;
+				    top: -25px;
+					left: 50%;
+					display: none;
+					margin-left: -200px;
+					padding: 70px 65px 50px;
+					background: #ffffff;
+					box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+					z-index: 100;
+
+	  				h2.form-block-title{
+	  					width: initial;
+	  					position: static;
+	  					margin: 0 auto;
+	  					margin-bottom: 40px;
+	  					padding: 0 10px;
+	  					font-size: $f-size2;
+	  					line-height: 40px;
+	  				}
+
+					p{
+						margin: 0 -50px;
+						margin-bottom: 40px;
+						line-height: 26px;
+						text-align: center;
+					}
+					
+					button{
+						display: block;
+						width: 275px;
+						margin: 0 auto;
+						margin-bottom: 0px;
+						line-height: 60px;
+						text-align: center;
+						font-size: $f-size3;
+						font-weight: bold;
+						color: $f-color2;
+						border: none;
+						background: $bg1;
+						cursor: pointer;
+					}
+
+				}
+
+				.successful{
+					position: absolute;
+	  				width: 640px;
+	  				top: 640px;
+	  				display: none;
+	  				margin: 0 auto;
+	  				padding-top: 60px;
+	  				background: #ffffff;
+	  				box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.15);
+	  				z-index: 100;
+					
+					h2{
+						position: static;
+						margin: 0 auto;
+						margin-bottom: 40px;
+						font-size: $f-size2;
+					}
+
+	  				p{
+						margin-bottom: 40px;
+						padding: 0 110px;
+						line-height: 24px;
+						text-align: center;
+					}
+					
+					button{
+						display: block;
+						width: 640px;
+						margin: 0 auto;
+						line-height: 60px;
+						text-align: center;
+						font-size: $f-size1;
+						font-weight: bold;
+						color: $f-color2;
+						text-transform: uppercase;
+					    border-bottom: 45px solid #EEEEEE;
+                        border-top: 45px solid #EEEEEE;
+                        border-left: 90px solid #EEEEEE;
+                        border-right: 90px solid #EEEEEE;
+						background: $bg1;
+						cursor: pointer;
+					}
+				}
+				
+				.pull-images{
+					display: block;
+					width: 100%;
+					margin: 0;
+					margin-bottom: 55px;
+					line-height: 60px;
+					text-align: center;
+					font-size: $f-size3;
+					font-weight: bold;
+					color: $f-color2;
+					background: $bg1;
+				}
+
+				.photo-wrapper{
+					
+					float: left;
+					margin-left: -32.5px;
+	  				margin-right: -110px;
+    				padding: 0 35px;
+  					padding-top: 40px;
+
+
+					.img-wrapper{
+						position: relative;
+						float: left;
+						margin-right: 65px;
+						margin-left: 0px;
+						margin-bottom: 35px;
+
+						.img-name{
+							display: block;
+							text-transform: uppercase;
+						}
+						
+						img{
+							display: block;
+							max-width: 100%;
+							width: 140px;
+							height: 140px;
+							margin-bottom: 20px;
+						}
+
+						span{
+							position: absolute;
+							top: -30px;
+							left: 110px;
+							display: block;
+							width: 60px;
+							height: 60px;
+							border-radius: 50%;
+							background: $bg2;
+						}
+					}
+
+				}
+
+			}
+
+			.file-upload{
+				width: 460px;
+				margin: 0 auto;
+				padding-left: 0;
+				cursor: pointer;
+
+				input{
+					display: none;
+				}
+
+				.button{
+					display: none;
+					margin: 0;
+					margin-bottom: 55px;
+					line-height: 60px;
+					text-align: center;
+					font-size: $f-size3;
+					color: $f-color3;
+					background: #F2F2F2;
+				}
+
+			}
+
+			.form-send{
+				display: block;
+				width: 460px;
+				margin: 0 auto;
+				margin-bottom: 100px;
+				font-size: $f-size3;
+				font-weight: bold;
+				color: $f-color2;
+				line-height: 60px;
+				text-transform: uppercase;
+				border: none;
+				background: $bg1;
+				clear: both;
+			}
+
+		}
+	}	
 }
